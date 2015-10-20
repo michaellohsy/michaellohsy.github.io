@@ -1,0 +1,85 @@
+/* Centered navbar (Source: http://stackoverflow.com/questions/10128812/center-navbar-in-twitter-bootstrap-2-0) */
+.navbar .navbar-inner {
+text-align: center;
+}
+.navbar .navbar-inner .nav {
+float: none;
+display: inline-block;
+}
+
+/*for fixed top nav bar*/
+body {
+  padding-top: 80px;
+  font-family: "PT Serif", Georgia, Times, "Times New Roman", serif;
+}
+
+/*nav bar aesthetics*/
+.navbar-nav li a {
+  color: #B30000; 
+  font-size: 2em;
+  font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+  margin-left:2em;
+  margin-right:2em;
+}
+
+/*aesthetics*/
+.container {
+  padding:5px 5px 5px 5px;
+}
+
+.btn {
+  margin:3px 3px 3px 3px;
+}
+
+/*aesthetics*/
+.black {
+ background-color: black;
+ color:white;
+}
+
+/*aesthetics*/
+.green {
+  background-color: green;
+  color:white;
+}
+
+/*aesthetics*/
+.red {
+  background-color: red;
+  color:white;
+}
+
+/*aesthetics*/
+.blue {
+  background-color: blue;
+  color:white;
+}
+
+/*aesthetics*/
+.purple {
+  background-color:#FF00FF;
+  color:white;
+}
+
+/*list title*/
+.list-group-title {
+  font-size: 1.2em;
+}
+
+/*list description*/
+.list-group-title p {
+  padding:5px 5px 5px 5px;
+}
+
+/*contact list in index page*/
+#contact_list li {
+  display:inline; 
+  margin-left:2em;
+  margin-right:2em;
+
+}
+
+/*contact list in index page*/
+#contact_list li a {
+  font-size: 1.5em;
+}
