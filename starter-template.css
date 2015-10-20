@@ -1,25 +1,14 @@
-/* Centered navbar (Source: http://stackoverflow.com/questions/10128812/center-navbar-in-twitter-bootstrap-2-0) */
-.navbar .navbar-inner {
-text-align: center;
-}
-.navbar .navbar-inner .nav {
-float: none;
-display: inline-block;
-}
-
 /*for fixed top nav bar*/
 body {
-  padding-top: 80px;
+  padding-top: 60px;
   font-family: "PT Serif", Georgia, Times, "Times New Roman", serif;
 }
 
 /*nav bar aesthetics*/
-.navbar-nav li a {
+.navbar a {
   color: #B30000; 
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
-  margin-left:2em;
-  margin-right:2em;
 }
 
 /*aesthetics*/
