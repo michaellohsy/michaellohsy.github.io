@@ -1,0 +1,40 @@
+<p> {{ getTitle() }}</p>
+<p> {{ getForecastDate() }}</p> 
+<p> {{ getValidTime() }}</p>
+<p> {{ getTempLow() }}</p>
+<p> {{ getTempHigh() }}</p>
+<p> {{ getHumidityLow() }}</p>
+<p> {{ getHumidityHigh() }}</p>
+<p> {{ getWindDirection() }}</p>
+<p> {{ getWindSpeed() }}</p>
+<p> {{ getMainForecast() }} </p>
+<p> {{ getMainForecastDescription() }} </p>
+<p> {{ getNightTimePeriod() }}</p>
+<p> {{ getForecastNightEast() }}</p>
+
+
+<table border=1>
+	<thead>
+		<tr>
+			<th>Time of day</th>
+			<th>Time Period</th>
+			<th>North</th>
+			<th>South</th>
+			<th>East</th>
+			<th>West</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="i in ['night', 'morn', 'afternoon']">
+			<td>{{ i }}</td>
+			<td>{{ data.channel[i].timePeriod }}</td>
+			<td>{{ data.channel[i].wxnorth }}</td>
+			<td>{{ data.channel[i].wxsouth }}</td>
+			<td>{{ data.channel[i].wxeast }}</td>
+			<td>{{ data.channel[i].wxwest }}</td>
+		</tr>
+	</tbody>
+</table>
+
+
+<p>{{ data }}</p>
