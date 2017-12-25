@@ -26,6 +26,6 @@ angular.module('neaWeatherApp')
         template: "<pm25></pm25>"
     })
     .otherwise({
-        template : "<h1>None</h1><p>Nothing has been selected</p>"
+        template : "<p>Oops! The page you requested does not exist.</p>"
     });
 }]);

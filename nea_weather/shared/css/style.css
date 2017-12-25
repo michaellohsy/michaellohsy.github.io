@@ -1,0 +1,121 @@
+/*Full width and height image styles plus transparent menu*/
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.outer {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: url(../img/marina-bay-skyline.jpg);
+    background-size: cover;
+}
+
+.bg-light {
+    background-color: rgba(0, 0, 0, 0.0) !important;
+}
+
+.navbar a {
+    color: #eee !important;
+}
+
+/*Fade in animation*/
+.view-container {
+    position: relative;
+}
+
+.view-frame.ng-enter,
+.view-frame.ng-leave {
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.view-frame.ng-enter {
+    animation: 1s fade-in;
+    z-index: 100;
+}
+
+.view-frame.ng-leave {
+    animation: 1s fade-out;
+    z-index: 99;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/*General L-R side-by-side positioning*/
+.dOverflowContainer {
+    overflow: hidden;
+}
+
+.fLeft {
+    float: left;
+}
+
+.fRight {
+    float: right;
+}
+
+/*main page location and temp div group styles*/
+#landingPageDiv1 {
+    width: 500px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    color: #666;
+}
+
+#pLocation {
+    font-size: 36pt;
+    margin-top: 10px;
+
+}
+
+#pTempHiLow {
+    font-size: 80px;
+}
+
+#pForecastDescription {
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.wi {
+    font-size: 80px;
+}
+
+/*4 Days Forecast band at the bottom*/
+.forecastfour {
+    color: #eee;
+    /*margin: 10px;*/
+    padding: 0;
+    /*border: 1px solid rgba(0, 0, 0, 0.25);*/
+    /*border-radius: 10px 10px 2px 2px;*/
+    background: rgba(0, 0, 0, 0.5);
+    /*box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);*/
+    /*-o-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);*/
+    /*-webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);*/
+    /*-moz-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);*/
+}

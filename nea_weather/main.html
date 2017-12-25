@@ -1,29 +1,39 @@
+<div id="landingPageDiv1" class="dOverflowContainer">
+    <!--Placeholders for now. For the sake of bootstrapping design -->
+    <div id="pLocation" class="fLeft">Singapore</div>
+    <!-- planning to put a location icon here too -->
 
-<div class="row">
-	<div ng-controller="NowcastController as now" class="col">
-		<h2 style="text-align: center;">{{ now.getCentralWeatherForecast() }}</h2>
-	</div>
+    <div class="fRight">
+        <div ng-controller="TodayController as today">
+            <p id="pTempHiLow">{{ today.getTempLow() }}°/<strong>{{ today.getTempHigh() }}°</strong></p>
 
-	<div ng-controller="TodayController as today" class="col">
-		<h2>{{ today.getTempLow() }}°C - {{ today.getTempHigh() }}°C</h2>
-		<h2>Humidity: {{ today.getHumidityLow() }}% - {{ today.getHumidityHigh() }}%</h2>
-	</div>
-
-	<div class="col">
-		<div ng-controller="PsiController as psi">
-			<h2>PSI: {{ psi.getNPSI() }} ({{ psi.getPSIDescriptor(psi.getNPSI()) }})</h2>
-		</div>
-
-		<div ng-controller="Pm25Controller as pm25">
-			<h2>PM 2.5: {{ pm25.getPm25() }} ({{ pm25.getDescriptor(pm25.getPm25()) }})</h2>
-		</div>
-	</div>
+        </div>
+        <div ng-controller="NowcastController as now" class="dOverflowContainer">
+            <!-- planning to make the icons change based on particular weather pattern -->
+            <p class="fLeft"><i class="wi wi-night-alt-partly-cloudy"></i></p>
+            <div class="fLeft" id="pForecastDescription">
+                <div>{{ now.getCentralWeatherForecast() }}</div>
+                <div id="dDate">Sunday, Dec 24</div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div style="padding-top: 20px;" ng-controller="FourDaysController as fourdays" class="row">
-	<div ng-repeat="day in fourdays.getDays()" class="col">
-		<h2>{{ fourdays.getDays()[$index] }}</h2>
-		<h3>{{ fourdays.getTemperatures()[$index] }}</h3>
-		<p>{{ fourdays.getForecastDescriptions()[$index] }}</p>
-	</div>
+<div ng-controller="FourDaysController as fourdays" class="row forecastfour fixed-bottom">
+    <div class="col">
+        <div ng-controller="PsiController as psi">
+            <p>PSI: {{ psi.getNPSI() }} ({{ psi.getPSIDescriptor(psi.getNPSI()) }})</p>
+        </div>
+        <div ng-controller="Pm25Controller as pm25">
+            <p>PM<sub>2.5</sub>: {{ pm25.getPm25() }} ({{ pm25.getDescriptor(pm25.getPm25()) }})</p>
+        </div>
+        <div ng-controller="TodayController as today">
+            <p>Humidity: {{ today.getHumidityLow() }}% - {{ today.getHumidityHigh() }}%</p>
+        </div>
+    </div>
+    <div ng-repeat="day in fourdays.getDays()" class="col">
+        <h2>{{ fourdays.getDays()[$index] }}</h2>
+        <h3>{{ fourdays.getTemperatures()[$index] }}</h3>
+        <p>{{ fourdays.getForecastDescriptions()[$index] }}</p>
+    </div>
 </div>
