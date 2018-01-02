@@ -1,0 +1,105 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2007-2014 Todd C. Miller <Todd.Miller@sudo.ws> http://www.sudo.ws/todd
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+\usepackage[empty]{fullpage}
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.80}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins to 0.5in on all sides
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+\textbf{\large Loh Sheng Yang, Michael}  & +65 97986543\\
+Blk 341 Hougang Ave 7 &  michaellohsy@gmail.com \\
+Singapore 530341 & https://www.linkedin.com/in/michael-loh-sy \\
+& https://github.com/michaellohsy \\
+\end{tabular*}
+\\
+
+\vspace{0.1in}
+
+\resheading{Education}
+\begin{itemize}
+\item
+	\ressubheading{National University of Singapore (NUS)}{Singapore}{Bachelor in Computer Engineering}{Aug. 2009 - May. 2013}
+\item
+	\ressubheading{University of California, Berkeley, San Francisco}{USA}{Summer Exchange}{May. 2011 - July. 2011}
+
+\end{itemize}
+
+\resheading{Work Experience}
+\begin{itemize}
+\item
+	\ressubheading{Plunify}{Singapore}{Senior Software Engineer}{May 2016- Present}
+	\begin{itemize}
+		\resitem{Developed machine learning cloud software to automate compilation of FPGA designs. }
+		\resitem{Created web portal for users to purchase, view and use cloud credits.}
+		\resitem{Implemented machine learning models to gain better insights into FPGA timing closure. }
+		\resitem{Installed and performed maintenance on a self hosted WordPress site for marketing purposes.}
+	\end{itemize}
+\item
+	\ressubheading{Bioinformatics Institute}{Singapore}{Software Developer}{August 2013 - April 2016}
+	\begin{itemize}
+		\resitem{Implemented a novel microscopy screening algorithm and helped reduce acquisition time by 40\%.}
+		\resitem{Added new image processing algorithms to an existing cell segmentation software.}
+		\resitem{Performed image registration on biomedical image slices for drug analysis.}
+		\resitem{Developed image processing algorithms and	 software for fly specie detection with 99\% accuracy.}
+		\resitem{Analysed and provided machine learning solutions for FPGA timing and optimization problems.}
+		\resitem{Designed and implemented  the  user  interface  for  an  image  processing  software.}
+	\end{itemize}
+\item
+	\ressubheading{Citibank}{Singapore}{Intern}{January 2012 - June 2012}
+	\begin{itemize}
+		\resitem{Performed source code migration from CVS to Perforce.}
+		\resitem{Tested electronic trading simulators and provided feedback to vendors.}
+		\resitem{Set up and deployed an electronic trading simulator.}
+	\end{itemize}
+\end{itemize}
+
+\resheading{Skills}
+
+\begin{description}
+\item[Languages:]
+Java, C{}\verb!++!, Python, R, PHP, SQL, HTML, CSS, Javascript
+\item[Frameworks:]
+QT, Tensorflow, Keras, JQuery, AngularJS, Bootstrap, Wordpress
+\end{description}
+
+\resheading{Publications}
+
+\begin{itemize}
+  \item \textbf{Loh, S. Y. M., Ogawa, Y., Kawana, S., Tamura, K., \& Lee, H. K. (2017).} \\ Semi-automated quantitative drosophila wings measurements. \textit{BMC Bioinformatics, 18}(319). doi:10.1186/s12859-017-1720-y 
+  \item \textbf{Nongpiur, M. E., Atalay, E., Gong, T., Loh, S. Y. M., Lee, H. K., He, M., Perera, S., \& Aung, T. (2016).} \\  Anterior segment imaging-based subdivision of subjects with primary angle closure glaucoma. \textit{Eye, 31}, 572-577. doi:10.1038/eye.2016.267
+  \item \textbf{Bougen-Zhukov, N., Loh, S. Y. M., Lee. H. K., \& Loo, L. (2017).} \\ Large-scale image-based screening and profiling of cellular phenotypes. \textit{Cytometry Part A, 91}, 115-125. doi:10.1002/cyto.a.22909
+\end{itemize}
+
+\end{document}
