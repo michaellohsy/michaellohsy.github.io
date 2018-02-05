@@ -89,11 +89,11 @@ angular.module('nowcast')
         return self.data.channel.main.forecast;
       }
     }
-    
-    self.getMainForecastDescription = function () {
-      if(self.data) {
-        return self.data.channel.main.forecast;
-      }
+
+    //non-verbose version of the function above
+    self.getMainForecastTerse = function () {
+        if(self.data)
+            return neaapi.getForecastDescription(self.data.channel.main.wxmain);
     }
 
     self.getForecastTimePeriodArea = function() {

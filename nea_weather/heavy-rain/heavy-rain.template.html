@@ -1,9 +1,11 @@
-<div class="row">
-	<div class="col">
-		<h2> {{ $ctrl.getTitle() }}</h2>
-	</div>
+<div class="row" data-active-view-item="heavyrain">
+    <div class="col">
+        <h4> {{ $ctrl.getTitle() }}</h4>
+    </div>
 </div>
 
-<p> {{ $ctrl.getWarning() }}</p>
+<p class="whiteParas"> {{ $ctrl.getWarning() }}</p>
 
-<img class="img-fluid" ng-src="{{'data:image/gif;base64,'+$ctrl.getRainAreaImage()}}" >
+<div>
+    <img class="img-fluid " ng-src="{{'data:image/gif;base64,'+$ctrl.getRainAreaImage()}}">
+</div>

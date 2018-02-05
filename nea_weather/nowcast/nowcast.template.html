@@ -1,64 +1,33 @@
+<div id="contentNowCast">
 
-<style type="text/css">
-.nowcast-item.ng-enter,
-.nowcast-item.ng-leave,
-.nowcast-item.ng-move {
-  transition: 0.5s linear all;
-}
+    <div class="row" data-active-view-item="nowcast">
+        <h4 class="col"> {{ $ctrl.getTitle() }} ({{ $ctrl.getValidTime() }})</h4>
+    </div>
 
-.nowcast-item.ng-enter,
-.nowcast-item.ng-move {
-  height: 0;
-  opacity: 0;
-  overflow: hidden;
-}
+    <div class="row">
+        <div class="col">
+            <input ng-model="$ctrl.searchKeyword" placeholder="Search" type="text" class="form-control col-sm-12 col-md-3 offset-md-9"/>
+            <table class="table table-striped table-responsive-md table-dark table-bordered table-hover">
+                <thead>
+                <tr>
+                    <th>Forecast</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                    <th>Location</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="nowcast-item" ng-repeat="row in $ctrl.aCandidates | filter:$ctrl.searchKeyword">
+                    <td>{{ row._forecast }}</td>
+                    <td>{{ row._lat }}</td>
+                    <td>{{ row._lon }}</td>
+                    <td>{{ row._name }}</td>
+                </tr>
+                </tbody>
+            </table>
+            <ul id="ulPaginator" uib-pagination total-items="$ctrl.totalItems" ng-model="$ctrl.currentPage"
+                items-per-page="$ctrl.itemsPerPage"></ul>
+        </div>
+    </div>
 
-.nowcast-item.ng-enter.ng-enter-active,
-.nowcast-item.ng-move.ng-move-active {
-  height: 120px;
-  opacity: 1;
-}
-
-.nowcast-item.ng-leave {
-  opacity: 1;
-  overflow: hidden;
-}
-
-.nowcast-item.ng-leave.ng-leave-active {
-  height: 0;
-  opacity: 0;
-  padding-bottom: 0;
-  padding-top: 0;
-}	
-</style>
-
-<div class="row">
-	<div class="col">
-		<h2> {{ $ctrl.getTitle() }} ({{ $ctrl.getValidTime() }})</h2>
-	</div>
 </div>
-
-<div class="input-group">
-	<input style="max-width: 350px" ng-model="searchKeyword" placeholder="Search" type="text" class="form-control"/>
-</div>
-
-<br>
-
-<table class="table table-striped table-responsive">
-	<thead class="thead-light">
-		<tr>
-			<th>Forecast</th>
-			<th>Latitude</th>
-			<th>Longitude</th>
-			<th>Location</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr class="nowcast-item" ng-repeat="row in $ctrl.getWeatherForecast() | filter: searchKeyword">
-			<td>{{ row._forecast }}</td>
-			<td>{{ row._lat }}</td>
-			<td>{{ row._lon }}</td>
-			<td>{{ row._name }}</td>
-		</tr>
-	</tbody>
-</table>
