@@ -11,10 +11,17 @@
 %-----------------------------------------------------------
 \usepackage[empty]{fullpage}
 \usepackage{color}
+\usepackage{enumitem}
 \definecolor{mygrey}{gray}{0.80}
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+}
 
 % Adjust margins to 0.5in on all sides
 \addtolength{\oddsidemargin}{-0.5in}
@@ -38,14 +45,19 @@
 \begin{document}
 
 \begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
-\textbf{\large Loh Sheng Yang, Michael}  & +65 97986543\\
-Blk 341 Hougang Ave 7 &  michaellohsy@gmail.com \\
-Singapore 530341 & https://www.linkedin.com/in/michael-loh-sy \\
-& https://github.com/michaellohsy \\
+\textbf{\large Loh Sheng Yang, Michael}  & michaellohsy@gmail.com\\
+Blk 341 Hougang Ave 7, Singapore 530341 & \href{https://www.linkedin.com/in/michael-loh-sy}{LinkedIn} \\
++65 97986543 & \href{https://github.com/michaellohsy}{GitHub} \\
 \end{tabular*}
 \\
 
 \vspace{0.1in}
+
+\resheading{Summary}
+
+\begin{description}[style=unboxed,leftmargin=0.2cm]
+\item Highly motivated software engineer with thorough hands-on experience working on different technologies and stacks. A team player with great communication skills who possesses excellent trouble shooting expertise. Adept in machine learning and data analysis with a passion for learning new technologies.
+\end{description}
 
 \resheading{Education}
 \begin{itemize}
@@ -61,27 +73,31 @@ Singapore 530341 & https://www.linkedin.com/in/michael-loh-sy \\
 \item
 	\ressubheading{Plunify}{Singapore}{Senior Software Engineer}{May 2016- Present}
 	\begin{itemize}
-		\resitem{Developed machine learning cloud software to automate compilation of FPGA designs. }
-		\resitem{Created web portal for users to purchase, view and use cloud credits.}
-		\resitem{Implemented machine learning models to gain better insights into FPGA timing closure. }
-		\resitem{Installed and performed maintenance on a self hosted WordPress site for marketing purposes.}
+	    \resitem{Main developer for Web and Cloud platform involving new architecture and legacy code.}
+	    \begin{itemize}
+			\resitem{Launching of AWS cloud instances for FPGA chip optimization.}
+			\resitem{Developed credits and cloud instance management platform.}
+			\resitem{Integrated payment and OAuth services for web application.}
+	    \end{itemize}
+	    \resitem{Developed and integrated desktop GUI application with cloud platform.}
+	    \resitem{Optimized code and database queries resulting in 90\% speed-up.}
+		\resitem{Created machine learning algorithms which reduced FPGA chip optimization times by 20\%.}
+		\resitem{Performed data visualization and analysis of FPGA data to gain insights into FPGA optimization.}
 	\end{itemize}
 \item
 	\ressubheading{Bioinformatics Institute}{Singapore}{Software Developer}{August 2013 - April 2016}
 	\begin{itemize}
 		\resitem{Implemented a novel microscopy screening algorithm and helped reduce acquisition time by 40\%.}
-		\resitem{Added new image processing algorithms to an existing cell segmentation software.}
 		\resitem{Performed image registration on biomedical image slices for drug analysis.}
 		\resitem{Developed image processing algorithms and	 software for fly specie detection with 99\% accuracy.}
 		\resitem{Analysed and provided machine learning solutions for FPGA timing and optimization problems.}
-		\resitem{Designed and implemented  the  user  interface  for  an  image  processing  software.}
 	\end{itemize}
 \item
 	\ressubheading{Citibank}{Singapore}{Intern}{January 2012 - June 2012}
 	\begin{itemize}
 		\resitem{Performed source code migration from CVS to Perforce.}
 		\resitem{Tested electronic trading simulators and provided feedback to vendors.}
-		\resitem{Set up and deployed an electronic trading simulator.}
+		%\resitem{Set up and deployed an electronic trading simulator.}
 	\end{itemize}
 \end{itemize}
 
@@ -89,17 +105,17 @@ Singapore 530341 & https://www.linkedin.com/in/michael-loh-sy \\
 
 \begin{description}
 \item[Languages:]
-Java, C{}\verb!++!, Python, R, PHP, SQL, HTML, CSS, Javascript
-\item[Frameworks:]
-QT, Tensorflow, Keras, JQuery, AngularJS, Bootstrap, Wordpress
+Java, C{}\verb!++!, Python, R, PHP, SQL, HTML, CSS, Javascript, Ansible
+\item[Libraries/Frameworks:]
+QT, Tensorflow, Keras, JQuery, AngularJS, Bootstrap, OpenCV, ImageJ
 \end{description}
 
 \resheading{Publications}
 
 \begin{itemize}
-  \item \textbf{Loh, S. Y. M., Ogawa, Y., Kawana, S., Tamura, K., \& Lee, H. K. (2017).} \\ Semi-automated quantitative drosophila wings measurements. \textit{BMC Bioinformatics, 18}(319). doi:10.1186/s12859-017-1720-y 
-  \item \textbf{Nongpiur, M. E., Atalay, E., Gong, T., Loh, S. Y. M., Lee, H. K., He, M., Perera, S., \& Aung, T. (2016).} \\  Anterior segment imaging-based subdivision of subjects with primary angle closure glaucoma. \textit{Eye, 31}, 572-577. doi:10.1038/eye.2016.267
-  \item \textbf{Bougen-Zhukov, N., Loh, S. Y. M., Lee. H. K., \& Loo, L. (2017).} \\ Large-scale image-based screening and profiling of cellular phenotypes. \textit{Cytometry Part A, 91}, 115-125. doi:10.1002/cyto.a.22909
+  \item \small{\href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5490177/pdf/12859_2017_Article_1720.pdf}{Loh, S. Y. M., Ogawa, Y., Kawana, S., Tamura, K., \& Lee, H. K. (2017).}} \\ \scriptsize{Semi-automated quantitative drosophila wings measurements. \textit{BMC Bioinformatics, 18}(319). doi:10.1186/s12859-017-1720-y }
+  \item \small{\href{https://www.nature.com/eye/journal/v31/n4/full/eye2016267a.html}{Nongpiur, M. E., Atalay, E., Gong, T., Loh, S. Y. M., Lee, H. K., He, M., Perera, S., \& Aung, T. (2016).}} \\  \scriptsize{Anterior segment imaging-based subdivision of subjects with primary angle closure glaucoma. \textit{Eye, 31}, 572-577. doi:10.1038/eye.2016.267}
+  \item \small{\href{http://onlinelibrary.wiley.com/doi/10.1002/cyto.a.22909/abstract}{Bougen-Zhukov, N., Loh, S. Y. M., Lee. H. K., \& Loo, L. (2017).}} \\ \scriptsize{Large-scale image-based screening and profiling of cellular phenotypes. \textit{Cytometry Part A, 91}, 115-125. doi:10.1002/cyto.a.22909}
 \end{itemize}
 
 \end{document}
