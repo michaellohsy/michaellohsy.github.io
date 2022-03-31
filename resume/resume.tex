@@ -39,6 +39,13 @@
 		\textbf{#1} & #2 \\
 		\textit{#3} & \textit{#4} \\
 \end{tabular*}\vspace{-6pt}}
+
+\newcommand{\ressubheadingrole}[2]{
+% new line here is important
+
+\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+		\textit{#1} & \textit{#2} \\
+\end{tabular*}\vspace{-6pt}}
 %-----------------------------------------------------------
 
 
@@ -46,7 +53,7 @@
 
 \begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
 \textbf{\large Loh Sheng Yang, Michael}  & michaellohsy@gmail.com\\
-Blk 341 Hougang Ave 7, Singapore 530341 & \href{https://www.linkedin.com/in/michael-loh-sy}{LinkedIn} \\
+Blk 612A Tampines North Drive 1, Singapore 521612 & \href{https://www.linkedin.com/in/michael-loh-sy}{LinkedIn} \\
 +65 97986543 & \href{https://github.com/michaellohsy}{GitHub} \\
 \end{tabular*}
 \\
@@ -56,22 +63,41 @@ Blk 341 Hougang Ave 7, Singapore 530341 & \href{https://www.linkedin.com/in/mich
 \resheading{Summary}
 
 \begin{description}[style=unboxed,leftmargin=0.2cm]
-\item Highly motivated software engineer with thorough hands-on experience working on different technologies and stacks. A team player with great communication skills who possesses excellent trouble shooting expertise. Adept in machine learning and data analysis with a passion for learning new technologies.
+
+\item Highly motivated senior software engineer with extensive experience working on different technologies.  A team player with great communication skills who possesses excellent analytical and trouble shooting capabilities.  A quick learner with a passion for learning new technologies. 
+
 \end{description}
 
 \resheading{Education}
+
 \begin{itemize}
 \item
-	\ressubheading{National University of Singapore (NUS)}{Singapore}{Bachelor in Computer Engineering}{Aug. 2009 - May. 2013}
-\item
-	\ressubheading{University of California, Berkeley, San Francisco}{USA}{Summer Exchange}{May. 2011 - July. 2011}
+	\ressubheading{National University of Singapore (NUS)}{Singapore}{Bachelor in Computer Engineering [Hons]}{Aug. 2009 - May. 2013}
 
+\vspace{0.1in}
 \end{itemize}
 
 \resheading{Work Experience}
 \begin{itemize}
 \item
-	\ressubheading{Plunify}{Singapore}{Senior Software Engineer}{May 2016- Present}
+	\ressubheading{Funding Societies}{Singapore}{Senior Software Engineer}{Sep 2019 - Present}
+
+	\begin{itemize}
+		\resitem{Designed and implemented a service to provision Virtual Credit Cards to Singapore SMEs}
+		 \begin{itemize}
+			\resitem{Integrated with 3rd Party Vendor for user,  wallet and card provisioning.}
+			\resitem{Developed webhooks to authorize or reject transactions in a timely manner.}
+			\resitem{Scheduled monthly jobs to generate and send statements to card owners.}
+		\end{itemize}
+		\resitem{Redesigned and automated an application registration process,  which reduced the time taken to modify or launch a new application from weeks to minutes.}
+		\resitem{Built and launched Buy Now Pay Later (BNPL) in Indonesia, which is offered on various e-commerce platforms and has more than 50,000 applications so far.}
+		\resitem{Worked on various new features and work flows for trade finance SaaS platform which serves SMEs across 5 different countries.}
+%		\resitem{Benchmarked Optimized file upload REST endpoint resulting in more than 50\% reduction in latency.}
+	\end{itemize}
+
+
+\item
+	\ressubheading{Plunify}{Singapore}{Senior Software Engineer}{May 2016- Sep 2019}
 	\begin{itemize}
 	    \resitem{Main developer for Web and Cloud platform involving new architecture and legacy code.}
 	    \begin{itemize}
@@ -80,42 +106,34 @@ Blk 341 Hougang Ave 7, Singapore 530341 & \href{https://www.linkedin.com/in/mich
 			\resitem{Integrated payment and OAuth services for web application.}
 	    \end{itemize}
 	    \resitem{Developed and integrated desktop GUI application with cloud platform.}
-	    \resitem{Optimized code and database queries resulting in 90\% speed-up.}
 		\resitem{Created machine learning algorithms which reduced FPGA chip optimization times by 20\%.}
 		\resitem{Performed data visualization and analysis of FPGA data to gain insights into FPGA optimization.}
 	\end{itemize}
+
+
 \item
-	\ressubheading{Bioinformatics Institute}{Singapore}{Software Developer}{August 2013 - April 2016}
+	\ressubheading{Bioinformatics Institute}{Singapore}{Software Developer}{Aug 2013 - Apr 2016}
 	\begin{itemize}
 		\resitem{Implemented a novel microscopy screening algorithm and helped reduce acquisition time by 40\%.}
 		\resitem{Performed image registration on biomedical image slices for drug analysis.}
 		\resitem{Developed image processing algorithms and	 software for fly specie detection with 99\% accuracy.}
 		\resitem{Analysed and provided machine learning solutions for FPGA timing and optimization problems.}
 	\end{itemize}
-\item
-	\ressubheading{Citibank}{Singapore}{Intern}{January 2012 - June 2012}
-	\begin{itemize}
-		\resitem{Performed source code migration from CVS to Perforce.}
-		\resitem{Tested electronic trading simulators and provided feedback to vendors.}
-		%\resitem{Set up and deployed an electronic trading simulator.}
-	\end{itemize}
+
+\vspace{0.1in}
 \end{itemize}
 
 \resheading{Skills}
 
 \begin{description}
 \item[Languages:]
-Java, C{}\verb!++!, Python, R, PHP, SQL, HTML, CSS, Javascript, Ansible
+Javascript, Go, Java, C{}\verb!++!, Python, R, PHP, SQL, HTML, CSS
 \item[Libraries/Frameworks:]
-QT, Tensorflow, Keras, JQuery, AngularJS, Bootstrap, OpenCV, ImageJ
+NodeJS, Git, JQuery, Angular,  AWS
+\item[Certifications:]
+AWS Certified Developer
+
 \end{description}
 
-\resheading{Publications}
-
-\begin{itemize}
-  \item \small{\href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5490177/pdf/12859_2017_Article_1720.pdf}{Loh, S. Y. M., Ogawa, Y., Kawana, S., Tamura, K., \& Lee, H. K. (2017).}} \\ \scriptsize{Semi-automated quantitative drosophila wings measurements. \textit{BMC Bioinformatics, 18}(319). doi:10.1186/s12859-017-1720-y }
-  \item \small{\href{https://www.nature.com/eye/journal/v31/n4/full/eye2016267a.html}{Nongpiur, M. E., Atalay, E., Gong, T., Loh, S. Y. M., Lee, H. K., He, M., Perera, S., \& Aung, T. (2016).}} \\  \scriptsize{Anterior segment imaging-based subdivision of subjects with primary angle closure glaucoma. \textit{Eye, 31}, 572-577. doi:10.1038/eye.2016.267}
-  \item \small{\href{http://onlinelibrary.wiley.com/doi/10.1002/cyto.a.22909/abstract}{Bougen-Zhukov, N., Loh, S. Y. M., Lee. H. K., \& Loo, L. (2017).}} \\ \scriptsize{Large-scale image-based screening and profiling of cellular phenotypes. \textit{Cytometry Part A, 91}, 115-125. doi:10.1002/cyto.a.22909}
-\end{itemize}
 
 \end{document}
