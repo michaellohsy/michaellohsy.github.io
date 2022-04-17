@@ -1,0 +1,9 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: home
+title: Hello!
+---
+
+Welcome to my corner on the internet. There isn't much on this site yet but I intend to create posts on different (not just technical) things I've learnt as a journal. Stay tuned!
