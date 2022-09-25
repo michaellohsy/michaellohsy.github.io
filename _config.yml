@@ -34,13 +34,18 @@ header_pages:
   - about.md
 
 # Build settings
-# remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.5"
-# plugins:
-# - jekyll-remote-theme # add this line to the plugins list if you already have one
-
-theme: minima
+remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.5"
 plugins:
-  - jekyll-feed
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-paginate
+
+paginate: 2 # amount of posts to show per page
+paginate_path: /page:num/
+
+search: true
+# theme: minima
+# plugins:
+#   - jekyll-feed
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
