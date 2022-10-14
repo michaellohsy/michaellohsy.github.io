@@ -1,0 +1,309 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Michael Loh",
+    "label": "Staff Software Engineer at Visa",
+    "image": "",
+    "email": "michaellohsy@gmail.com",
+    "phone": "97986543",
+    "url": "https://michaellohsy.github.io/",
+    "summary": "Highly motivated software engineer with thorough hands-on experience working on different technologies and stacks. A team player with great communication skills who possesses excellent trouble shooting expertise. Adept in machine learning and data analysis with a passion for learning new technologies.",
+    "location": {
+      "countryCode": "SG",
+      "address": "Singapore",
+      "city": "Singapore",
+      "region": "Singapore"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "michael-loh-sy",
+        "url": "https://www.linkedin.com/in/michael-loh-sy/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Visa",
+      "position": "Staff Software Engineer",
+      "url": "https://www.linkedin.com/company/visa/",
+      "company": "Visa",
+      "website": "https://www.visa.com.sg/",
+      "startDate": "2022-09-20",
+      "endDate": "",
+      "highlights": [],
+      "location": "Singapore, Singapore"
+    },
+    {
+      "name": "Funding Societies",
+      "position": "Senior Software Engineer",
+      "url": "https://www.linkedin.com/company/funding-societies/",
+      "company": "Funding Societies",
+      "website": "https://fundingsocieties.com/",
+      "startDate": "2019-09-30",
+      "endDate": "2022-09-02",
+      "highlights": [
+        "Head a team of 5 to design and implement a service to provision Virtual Credit Cards for small businesses in Singapore.",
+        "Integrated with 3rd Party Vendor for user, wallet and card provisioning.",
+        "Developed webhooks to authorize or reject card transactions in a timely manner.",
+        "Scheduled monthly jobs to generate and send statements to card owners.",
+        "Redesigned and automated an application registration process, which reduced the time taken to modify or launch a new application from weeks to minutes.",
+        "Built and launched Buy Now Pay Later (BNPL) in Indonesia, which is offered on various e-commerce platforms and has more than 50,000 applications so far.",
+        "Worked on various new features and work flows for trade finance SaaS platform which serves small businesses across 5 different countries in South East Asia."
+      ],
+      "location": "Singapore, Singapore"
+    },
+    {
+      "name": "Plunify",
+      "position": "Senior Software Engineer",
+      "url": "https://www.linkedin.com/company/plunify/",
+      "company": "Plunify",
+      "website": "https://www.plunify.com/",
+      "startDate": "2016-05-31",
+      "endDate": "2019-09-30",
+      "highlights": [
+        "Main developer for Web and Cloud platform involving new architecture and legacy code",
+        "Launching of AWS cloud instances for FPGA chip optimization.",
+        "Developed credits and cloud instance management platform.",
+        "Integrated payment and OAuth services for web application.",
+        "Developed and integrated desktop GUI application with cloud platform.",
+        "Optimized code and database queries resulting in 90% speed-up.",
+        "Created machine learning algorithms which reduced FPGA chip optimization times by 20%.",
+        "Performed data visualization and analysis of FPGA data to gain insights into FPGA optimization."
+      ],
+      "location": "Singapore, Singapore"
+    },
+    {
+      "name": "A*STAR - Agency for Science, Technology and Research",
+      "position": "Software Engineer",
+      "url": "https://www.linkedin.com/company/astarsg/",
+      "company": "Bioinformatics Institute",
+      "website": "https://www.a-star.edu.sg/bii",
+      "startDate": "2013-08-31",
+      "endDate": "2016-04-30",
+      "highlights": [
+        "Implemented a novel microscopy screening algorithm and helped reduce acquisition time by 40%.",
+        "Performed image registration on biomedical image slices for drug analysis.",
+        "Developed image processing algorithms and software for fly specie detection with 99% accuracy.",
+        "Analysed and provided machine learning solutions for FPGA timing and optimization problems."
+      ]
+    },
+    {
+      "name": "CitiBank",
+      "position": "Intern",
+      "url": "https://www.linkedin.com/company/citi/",
+      "company": "CitiBank",
+      "website": "https://www.citibank.com.sg/",
+      "startDate": "2012-01-31",
+      "endDate": "2012-06-30",
+      "highlights": [
+        "Performed source code migration from CVS to Perforce",
+        "Maintained an electronic trading simulator",
+        "Tested and analysed two electronic trading simulators by different vendors",
+        "Designed a Wiki learning platform to improve knowledge transfer among 10 IT staff",
+        "Gained familiarity of FIX protocol"
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "National University of Singapore",
+      "area": "Computer Engineering",
+      "studyType": "Bachelor's degree",
+      "startDate": "2009-08-01",
+      "endDate": "2013-05-31",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "University of California, Berkeley",
+      "area": "",
+      "studyType": "",
+      "startDate": "2011-12-31",
+      "endDate": "2011-12-31",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "NYAA",
+      "date": "2010-10-31",
+      "awarder": "National Youth Achievement Award Council of Singapore",
+      "summary": "Travelled to Tamil Nadu, India for an overseas community service project to teach English and Maths to 60 primary school studentst. Learnt Aikido for 4 years achieving a rank of 1st Kyu. Participated in a canoeing expedition for 20 students. Helped out at an old folk’s home once a week for 3 months."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Building Containerized Applications on AWS",
+      "issuer": "Coursera",
+      "startDate": "2020-12-31",
+      "url": "https://www.coursera.org/account/accomplishments/certificate/LNFVKDHEQ9GQ"
+    },
+    {
+      "name": "AWS Fundamentals: Going Cloud-Native",
+      "issuer": "Coursera",
+      "startDate": "2020-12-31",
+      "url": "https://www.coursera.org/account/accomplishments/certificate/QZ7SC25FLZ29"
+    },
+    {
+      "name": "AWS Certified Developer – Associate",
+      "issuer": "Amazon Web Services (AWS)",
+      "endDate": "2024-08-31",
+      "startDate": "2021-08-31",
+      "url": "https://www.credly.com/badges/1f8520f7-d6cc-475f-8a07-c5c1ffd5f024?source=linked_in_profile"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Semi-automated quantitative drosophila wings measurements.",
+      "publisher": "BMC Bioinformatics",
+      "releaseDate": "2017-06-28",
+      "summary": "",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5490177/pdf/12859_2017_Article_1720.pdf",
+      "website": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5490177/pdf/12859_2017_Article_1720.pdf"
+    },
+    {
+      "name": "Anterior segment imaging-based subdivision of subjects with primary angle closure glaucoma.",
+      "publisher": "Nature Eye",
+      "releaseDate": "2016-12-09",
+      "summary": "",
+      "url": "https://www.nature.com/eye/journal/v31/n4/full/eye2016267a.html",
+      "website": "https://www.nature.com/eye/journal/v31/n4/full/eye2016267a.html"
+    },
+    {
+      "name": "Large-scale image-based screening and profiling of cellular phenotypes",
+      "publisher": "Cytometry Part A",
+      "releaseDate": "2016-07-19",
+      "summary": "",
+      "url": "http://onlinelibrary.wiley.com/doi/10.1002/cyto.a.22909/abstract",
+      "website": "http://onlinelibrary.wiley.com/doi/10.1002/cyto.a.22909/abstract"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Node.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Angular",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Java",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Software Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "jQuery",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Amazon Web Services (AWS)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "R",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Microservices",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Python",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML5",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Angular Material",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "JavaScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PHP",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Cascading Style Sheets (CSS)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Ansible",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Computer Science",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Qt",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "LaTeX",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Git",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Go (Programming Language)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Vim",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native Speaker"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": [],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+  }
+}
