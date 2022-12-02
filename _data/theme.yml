@@ -3,4 +3,5 @@ skin: soft # default, night, plum, sea, soft, steel
 
 navigation_pages:
   - about.md
+  - posts.md
   - side-projects.md

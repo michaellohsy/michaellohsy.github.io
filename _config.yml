@@ -28,6 +28,10 @@ twitter_username:
 github_username: michaellohsy
 linkedin_username: michael-loh-sy
 
+author:
+  name: Michael Loh
+  picture: /assets/profile.jpg
+
 # Build settings
 remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.5"
 plugins:
