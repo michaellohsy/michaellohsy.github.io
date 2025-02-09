@@ -23,15 +23,14 @@
     urlcolor=blue,
 }
 
-% Adjust margins to 0.5in on all sides
+% Adjust margins to optimize space
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1.0in}
 \addtolength{\topmargin}{-0.5in}
 \addtolength{\textheight}{1.0in}
 
-%-----------------------------------------------------------
-%Custom commands
+% Custom commands
 \newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
 \newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
 \newcommand{\ressubheading}[4]{
@@ -40,100 +39,79 @@
 		\textit{#3} & \textit{#4} \\
 \end{tabular*}\vspace{-6pt}}
 
-\newcommand{\ressubheadingrole}[2]{
-% new line here is important
-
-\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
-		\textit{#1} & \textit{#2} \\
-\end{tabular*}\vspace{-6pt}}
-%-----------------------------------------------------------
-
-
+% Document start
 \begin{document}
 
 \begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
 \textbf{\large Loh Sheng Yang, Michael}  & michaellohsy@gmail.com\\
-Blk 612A Tampines North Drive 1, Singapore 521612 & \href{https://www.linkedin.com/in/michael-loh-sy}{LinkedIn} \\
-+65 97986543 & \href{https://github.com/michaellohsy}{GitHub} \\
+Singapore & \href{https://www.linkedin.com/in/michael-loh-sy}{LinkedIn} | \href{https://github.com/michaellohsy}{GitHub} \\
 \end{tabular*}
-\\
 
 \vspace{0.1in}
 
 \resheading{Summary}
-
 \begin{description}[style=unboxed,leftmargin=0.2cm]
-
-\item Highly motivated senior software engineer with extensive experience working on different technologies.  A team player with great communication skills who possess excellent analytical and trouble shooting capabilities.  A quick learner with a passion for learning new technologies. 
-
+\item Senior Software Engineer with expertise in backend development, distributed systems, and cloud solutions. Strong analytical and troubleshooting skills, with a collaborative mindset and excellent communication abilities. 
 \end{description}
 
 \resheading{Education}
-
 \begin{itemize}
-\item
-	\ressubheading{National University of Singapore (NUS)}{Singapore}{Bachelor in Computer Engineering [Hons]}{Aug. 2009 - May. 2013}
-
-\vspace{0.1in}
+\item \ressubheading{National University of Singapore (NUS)}{Singapore}{B.Comp Engineering (Hons)}{Aug 2009 - May 2013}
 \end{itemize}
 
 \resheading{Work Experience}
 \begin{itemize}
+
 \item
-	\ressubheading{Funding Societies}{Singapore}{Senior Software Engineer}{Sep 2019 - Present}
+	\ressubheading{Visa Worldwide}{Singapore}{Staff Software Engineer}{Sep 2022 - Present}
 
 	\begin{itemize}
-		\resitem{Head a team of 5 to design and implement a service to provision Virtual Credit Cards for small businesses in Singapore.}
-		 \begin{itemize}
-			\resitem{Integrated with 3rd Party Vendor for user,  wallet and card provisioning.}
-			\resitem{Developed webhooks to authorize or reject card transactions in a timely manner.}
-			\resitem{Scheduled monthly jobs to generate and send statements to card owners.}
-		\end{itemize}
-		\resitem{Redesigned and automated an application registration process,  which reduced the time taken to modify or launch a new application from weeks to minutes.}
-		\resitem{Built and launched Buy Now Pay Later (BNPL) in Indonesia, which is offered on various e-commerce platforms and has more than 50,000 applications so far.}
-		\resitem{Worked on various new features and work flows for trade finance SaaS platform which serves small businesses across 5 different countries in South East Asia.}
-%		\resitem{Benchmarked Optimized file upload REST endpoint resulting in more than 50\% reduction in latency.}
+		\resitem{Led development of features and bug fixes for Visa Installments, while driving the migration from monolith to microservices to enhance system stability and scalability.}
+		\resitem{Designed and led development of features for Visa Click to Pay, including the migration of 70 million profiles, enabling checkout via both email and phone.}
+		\resitem{Optimized regression testing, reducing execution time by 75\% and significantly accelerating deployment cycles.}
+		\resitem{Led a team of 3-8 engineers, conducting PR reviews and providing technical guidance to improve code quality and best practices.}
+		\resitem{Collaborated with teams across multiple global offices, working closely with QA, DevOps, and Security teams to ensure seamless development and deployment.}
+		\resitem{Partnered with product managers and architects for grooming, technical design; led stakeholder demos for completed features.}
+	\end{itemize}
+	
+\item
+	\ressubheading{Funding Societies}{Singapore}{Senior Software Engineer}{Sep 2019 - Sep 2022}
+
+	\begin{itemize}
+		\resitem{Led a team of 5 to develop a Virtual Credit Card provisioning service}
+		\resitem{Integrated with an external partner API for user,  wallet and card provisioning.}
+		\resitem{Developed webhooks to authorize or reject card transactions in a timely manner.}
+		\resitem{Automated an application registration process,  reducing setup time from weeks to minutes.}
+		\resitem{Built and launched Buy Now Pay Later (BNPL) in Indonesia, securing 50,000+ applications.}
+		\resitem{Delivered new features for Trade Finance SaaS platform for small businesses in 5 SEA countries.}
 	\end{itemize}
 
 
 \item
 	\ressubheading{Plunify}{Singapore}{Senior Software Engineer}{May 2016- Sep 2019}
 	\begin{itemize}
-	    \resitem{Main developer for Web and Cloud platform involving new architecture and legacy code.}
-	    \begin{itemize}
-			\resitem{Launching of AWS cloud instances for FPGA chip optimization.}
-			\resitem{Developed credits and cloud instance management platform.}
-			\resitem{Integrated payment and OAuth services for web application.}
-	    \end{itemize}
-	    \resitem{Developed and integrated desktop GUI application with cloud platform.}
-		\resitem{Created machine learning algorithms which reduced FPGA chip optimization times by 20\%.}
-		\resitem{Performed data visualization and analysis of FPGA data to gain insights into FPGA optimization.}
+	    \resitem{Developed a web platform enabling users to launch AWS cloud instances for FPGA chip optimization.}
+	    \resitem{Designed and built a credits and cloud instance management system within the web platform.}
+	    \resitem{Integrated payment processing and OAuth authentication for secure user access.}
+	   \resitem{Created machine learning algorithms reducing FPGA chip optimization times by 20\%.}
 	\end{itemize}
 
 
 \item
 	\ressubheading{Bioinformatics Institute}{Singapore}{Software Developer}{Aug 2013 - Apr 2016}
 	\begin{itemize}
-		\resitem{Implemented a novel microscopy screening algorithm and helped reduce acquisition time by 40\%.}
-		\resitem{Performed image registration on biomedical image slices for drug analysis.}
-		\resitem{Developed image processing algorithms and	 software for fly specie detection with 99\% accuracy.}
-		\resitem{Analysed and provided machine learning solutions for FPGA timing and optimization problems.}
+		\resitem{Implemented a novel microscopy screening algorithm and reduced acquisition time by 40\%.}
+		\resitem{Developed image processing algorithms and software achieving 99\% fly species detection accuracy.}
 	\end{itemize}
 
 \vspace{0.1in}
 \end{itemize}
 
 \resheading{Skills}
-
 \begin{description}
-\item[Languages:]
-Javascript, Go, Java, C{}\verb!++!, Python, R, PHP, SQL, HTML, CSS
-\item[Libraries/Frameworks:]
-NodeJS, Git, JQuery, Angular,  AWS
-\item[Certifications:]
-AWS Certified Developer - Associate
-
+\item[Languages:] Java, Go, JavaScript, Python, C++
+\item[Frameworks \& Tools:] Spring Boot, Node.js, AWS, Git, Jenkins, Maven, Kubernetes,  Kafka, SQL
+\item[Certifications:] AWS Certified Developer - Associate
 \end{description}
-
 
 \end{document}
