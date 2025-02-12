@@ -1,13 +1,282 @@
----
-# Using .html to enable pagination
+<!DOCTYPE html>
+<html lang="en">
 
-layout: home
-paginate: true
-title: Michael Loh
----
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Michael Loh Resume" />
+    <meta name="author" content="Michael Loh" />
+    <title>Michael Loh</title>
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
 
-Welcome to my corner on the internet. There isn't much on this site yet but I
-intend to create posts on different (not just technical) things I've learnt as a
-journal. Stay tuned!
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Clarence Taylor</span>
+            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
+                    src="assets/profile.jpg" alt="..." /></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#side-projects">Side Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Page Content-->
+    <div class="container-fluid p-0">
+        <!-- About-->
+        <section class="resume-section" id="about">
+            <div class="resume-section-content">
+                <h1 class="mb-0">
+                    Michael
+                    <span class="text-primary">Loh</span>
+                </h1>
+                <div class="subheading mb-5">
+                    Singapore ·
+                    <a href="mailto:michaellohsy@gmail.com">michaellohsy@gmail.com</a>
+                </div>
+                <p class="lead mb-5">
+                    Senior Software Engineer with expertise in backend development, distributed systems, and cloud
+                    solutions. Strong analytical and troubleshooting skills, with a collaborative mindset and excellent
+                    communication abilities.
+                </p>
+                <div class="social-icons">
+                    <a class="social-icon" href="https://www.linkedin.com/in/michael-loh-sy"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a class="social-icon" href="https://github.com/michaellohsy"><i class="fab fa-github"></i></a>
+                    <a class="" href="resume/resume.pdf">Resume</a>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Experience-->
+        <section class="resume-section" id="experience">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Experience</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Staff Software Engineer</h3>
+                        <div class="subheading mb-3">Visa Worldwide</div>
+                        <ul>
+                            <li>Led development of features and bug fixes for Visa Installments, while driving the
+                                migration from monolith to microservices to enhance system stability and scalability.
+                            </li>
+                            <li>Designed and led development of features for Visa Click to Pay, including the migration
+                                of 70 million profiles, enabling checkout via both email and phone.</li>
+                            <li>Optimized regression testing, reducing execution time by 75% and significantly
+                                accelerating deployment cycles.</li>
+                            <li>Led a team of 3-8 engineers, conducting PR reviews and providing technical guidance to
+                                improve code quality and best practices.</li>
+                            <li>Collaborated with teams across multiple global offices, working closely with QA, DevOps,
+                                and Security teams to ensure seamless development and deployment.</li>
+                            <li>Partnered with product managers and architects for grooming, technical design; led
+                                stakeholder demos for completed features.</li>
+                        </ul>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <span class="text-primary">Sep 2022 - Present</span>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Senior Software Engineer</h3>
+                        <div class="subheading mb-3">Funding Societies</div>
+                        <ul>
+                            <li>Led a team of 5 to develop a Virtual Credit Card provisioning service.</li>
+                            <li>Integrated with an external partner API for user, wallet and card provisioning.</li>
+                            <li>Developed webhooks to authorize or reject card transactions in a timely manner.</li>
+                            <li>Automated an application registration process, reducing setup time from weeks to
+                                minutes.</li>
+                            <li>Built and launched Buy Now Pay Later (BNPL) in Indonesia, securing 50,000+ applications.
+                            </li>
+                            <li>Delivered new features for Trade Finance SaaS platform for small businesses in 5 SEA
+                                countries.</li>
+                        </ul>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <span class="text-primary">Sep 2019 - Sep 2022</span>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Senior Software Engineer</h3>
+                        <div class="subheading mb-3">Plunify</div>
+                        <ul>
+                            <li>Developed a web platform enabling users to launch AWS cloud instances for FPGA chip
+                                optimization.</li>
+                            <li>Designed and built a credits and cloud instance management system within the web
+                                platform.</li>
+                            <li>Integrated payment processing and OAuth authentication for secure user access.</li>
+                            <li>Created machine learning algorithms reducing FPGA chip optimization times by 20%.</li>
+                        </ul>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <span class="text-primary">May 2016 - Sep 2019</span>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Software Engineer</h3>
+                        <div class="subheading mb-3">Bioinformatics Institute</div>
+                        <ul>
+                            <li>Implemented a novel microscopy screening algorithm and helped reduce acquisition time by
+                                40%.</li>
+                            <li>Performed image registration on biomedical image slices for drug analysis.</li>
+                            <li>Developed image processing algorithms and software for fly specie detection with 99%
+                                accuracy. </li>
+                            <li>Analysed and provided machine learning solutions for FPGA timing and optimization
+                                problems.</li>
+                        </ul>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <span class="text-primary">August 2013 - April 2016</span>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Intern</h3>
+                        <div class="subheading mb-3">Citibank</div>
+                        <ul>
+                            <li>Performed source code migration from CVS to Perforce.</li>
+                            <li>Maintained an electronic trading simulator.</li>
+                            <li>Tested and analysed two electronic trading simulators by different vendors.</li>
+                            <li>Designed a Wiki learning platform to improve knowledge transfer among 10 IT staff.</li>
+                            <li>Gained familiarity of FIX protocol.</li>
+                        </ul>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <span class="text-primary">January 2012 - June 2012</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Education-->
+        <section class="resume-section" id="education">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Education</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">National University of Singapore (NUS)</h3>
+                        <div class="subheading mb-3">Bachelors in Computer Engineering</div>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <span class="text-primary">August 2009 - May 2013</span>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">University of California, Berkeley, San Francisco</h3>
+                        <div class="subheading mb-3">Summer Exchange</div>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <span class="text-primary">May 2011 - July 2011</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Skills-->
+        <section class="resume-section" id="skills">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Skills</h2>
+                <div class="subheading mb-3">Programming Languages</div>
+                <p>Java, Go, JavaScript, Python, C++</p>
+                <div class="subheading mb-3">Frameworks & Tools</div>
+                <p>Spring Boot, NodeJS, AWS, Git, Jenkins, Maven, Kubernetes, Kafka, SQL</p>
+                <div class="subheading mb-3">Certifications</div>
+                <p>AWS Certified Developer - Associate</p>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Publications-->
+        <section class="resume-section" id="publications">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Publications</h2>
+                <ul>
+                    <li>
+                        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5490177/pdf/12859_2017_Article_1720.pdf">Loh,
+                            S. Y. M., Ogawa, Y., Kawana, S., Tamura, K., &amp; Lee, H. K. (2017).</a><br>Semi-automated
+                        quantitative drosophila wings measurements.<br><i>BMC Bioinformatics, 18</i>(319).
+                        doi:10.1186/s12859-017-1720-y
+                    </li>
+                    <li>
+                        <a href="https://www.nature.com/eye/journal/v31/n4/full/eye2016267a.html">Nongpiur, M. E.,
+                            Atalay, E., Gong, T., Loh, S. Y. M., Lee, H. K., He, M., Perera, S., &amp; Aung, T.
+                            (2016).</a><br>Anterior segment imaging-based subdivision of subjects with primary angle
+                        closure glaucoma.<br><i>Eye, 31</i>, 572-577. doi:10.1038/eye.2016.267
+                    </li>
+                    <li>
+                        <a href="http://onlinelibrary.wiley.com/doi/10.1002/cyto.a.22909/abstract">Bougen-Zhukov, N.,
+                            Loh, S. Y. M., Lee. H. K., &amp; Loo, L. (2017).</a><br>Large-scale image-based screening
+                        and profiling of cellular phenotypes.<br><i>Cytometry Part A, 91</i>, 115-125.
+                        doi:10.1002/cyto.a.22909
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Interests-->
+        <section class="resume-section" id="side-projects">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Side Projects</h2>
+                <ul>
+                    <li><a href="nea_weather/">Weather app</a> using National Environment Agency (NEA)'s <a
+                            href="https://www.nea.gov.sg/api">weather api</a>. Also made using AngularJS. The git
+                        repository can be found <a href="https://github.com/michaellohsy/nea_weather">here</a>.
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Interests-->
+        <section class="resume-section" id="interests">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Interests</h2>
+                <p>In my free time I attend online courses or work on small projects to learn new technology. I am
+                    interested in the Internet of Things (IOT) and how this can be applied to home automation. My other
+                    hobbies include (in no particular order) reading, biking, manga, anime and gaming.</p>
+            </div>
+        </section>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
 
-<br /><br />
+</html>
